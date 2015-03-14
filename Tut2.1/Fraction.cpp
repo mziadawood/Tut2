@@ -7,7 +7,7 @@ using namespace std;
 
 Fraction::Fraction()
 {
-	den = 0;
+	den = 1;
 	nume = 0;
 }
 
@@ -95,7 +95,9 @@ istream& operator>>(istream& is, Fraction &h)
 	int temp;
 	char sp;
 	char sl = 0;
-	is >> temp>>sp;
+	is >> temp;
+		is.get(sp);
+	
 
 	if (sp == '/')
 	{

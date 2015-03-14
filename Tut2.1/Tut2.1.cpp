@@ -12,13 +12,13 @@ int main()
 {
 	Fraction a, b, c;
 
-	int temp1, temp2;
+	
 
 	cout << "enter number one :";
-	cin >> temp1;
+	cin >>a;
 
-	cout << "enter number two";
-	cin >> temp2;
+	cout << "enter number two :";
+	cin >> b;
 
 	
 
@@ -26,19 +26,19 @@ int main()
 
 	c = a + b;
 
-	cout << "The addition of the fractions is :" << c;
+	cout << "The addition of the fractions is :" << c << endl;
 
 	c = a - b;
 
-	cout << "The subtraction of the fractions is :" << c;
+	cout << "The subtraction of the fractions is :" << c << endl;
 
 	c = a * b;
 
-	cout << "The multiplication of the fractions is :" << c;
+	cout << "The multiplication of the fractions is :" << c << endl;
 
 	c = a / b;
 
-	cout << "The division of the fractions is :" << c;
+	cout << "The division of the fractions is :" << c << endl;
 
 
 	system("pause");
