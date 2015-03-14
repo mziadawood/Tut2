@@ -2,6 +2,9 @@
 #pragma once
 #ifndef FRACTION_H
 #define FRACTION_H
+
+using namespace std;
+
 class Fraction
 {
 private:
@@ -19,10 +22,7 @@ public:
 	Fraction operator-(Fraction&);
 	Fraction operator*(Fraction&);
 	Fraction operator/(Fraction&);
-
-
-
-
-
+	friend ostream& operator<<(ostream&, const Fraction &);
+	friend istream& operator>>(istream&, Fraction &);
 };
 #endif
